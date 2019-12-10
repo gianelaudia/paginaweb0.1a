@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="jotaese.js"></script>
+<head>
+	<font id="txx" color="black"></font></a>
+</head>
+
+<body>
+	<style>
+* {box-sizing: border-box}
+body {font-family: "Consolas", monoescape;}
+
+/* Style the tab */
+.tab {
+  font-family: "Consolas", monoescape;
+  margin-top: 5px;
+  margin-left: 13px;
+  float: left;
+  background-color: black;
+  width: 15%;
+  height: 500px;
+
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  font-family: "Consolas", monoescape;
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 20px 16px;
+  height: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #323232;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #1F1F1F;
+}
+
+/* Style the tab content */
+.tabcontent {
+  font-family: "Consolas", monoescape;
+  float: left;
+  margin-top: 5px;
+  padding: 0px 12px;
+  width: 0%;
+  border: none;
+  height: 0px;
+  background-color: black;
+}
+img{
+  background-color: black;
+  margin-left: 0px;
+  width: 700px;
+  height: 500px;
+  position: center;
+}
+
+
+/************************************/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.openbtn2 {
+  font-family: "Consolas", monoescape;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  margin-left: 500px;
+  margin-top: 425px;
+  width: 165px;
+  border: none;
+  float: left;
+        position: absolute;
+}
+.openbtn2:hover {
+  background-color:#323232;
+}
+
+iframe{
+  margin-top: 5px;
+  margin-left: 220px;
+}
+/************************************/
+
+
+		#txx {
+  			font-size: 20px;
+  			border: none;
+  			font-style: inherit;
+  			font-family: "Consolas", monoescape;
+			}
+
+
+@media screen and (max-width: 1024px){
+    
+
+iframe{
+  margin-left: 17px;
+  width:84%;
+}
+
+}
+
+	</style>
+
+<div id="sc" >
+
+<iframe width="60%" height="119" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/700609057&color=%2367C9FF&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+<iframe width="60%" height="119" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/687288586&color=%2367C9FF&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+<iframe width="60%" height="119" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/682137905&color=%2367C9FF&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+<script>
+function opensrx(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+
+</html>

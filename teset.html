@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Flyout Example</title>
+<link href="dist/sidepanel.css" rel="stylesheet">
+<style>
+/* サンプルページ用 */
+.flyout button {
+  height: 32px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: background-color .3s ease-out;
+}
+.flyout button:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+.flyout button:active {
+  background-color: rgba(0, 0, 0, .5);
+}
+.flyout textarea {
+  background-color: transparent;
+  border: 0;
+  font-family: Monaco, Menlo, Consolas, 'Courier New', Courier, monospace;
+  font-size: medium;
+  margin: 0;
+  padding: 10px;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+</style>
+<script src="dist/sidepanel.js"></script>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla id dolor a rhoncus. Sed vel nisl tempus metus hendrerit blandit a a nisl. Maecenas sed enim sit amet sem fringilla fermentum. Mauris elementum vehicula elit. Quisque consequat ipsum ut justo ornare volutpat. Sed varius sit amet metus nec accumsan. Nunc suscipit metus risus, id facilisis magna ullamcorper in. Fusce sollicitudin euismod dolor vitae fermentum.</p>
+
+  <!-- サイドバー用 -->
+  <div class="flyoutWrap hidden flexRow fillWithLastChild">
+    <section class="flyout flexColumn fillWithLastChild">
+      <!-- サイドバーの中身 (サンプルとしてボタンとテキストエリアを設置) -->
+      <div class="flexRow">
+        <button>Button A</button>
+        <button>Button B</button>
+      </div>
+      <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla id dolor a rhoncus. Sed vel nisl tempus metus hendrerit blandit a a nisl. Maecenas sed enim sit amet sem fringilla fermentum. Mauris elementum vehicula elit. Quisque consequat ipsum ut justo ornare volutpat. Sed varius sit amet metus nec accumsan. Nunc suscipit metus risus, id facilisis magna ullamcorper in. Fusce sollicitudin euismod dolor vitae fermentum.</textarea>
+    </section>
+
+    <div class="flyoutBackground"></div>
+  </div>
+
+  <!-- サイドバーの表示をトグルするボタン -->
+  <button class="flyoutToggle hidden"><span></span></button>
+</body>
+</html>

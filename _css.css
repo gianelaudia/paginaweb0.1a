@@ -1,0 +1,73 @@
+#tres{ 	position: relative; ;
+		float: right;
+		margin-top: 10px;
+		text-shadow: 0px 10px 5px #67C9FF;
+		padding-left: 23vh;
+		padding-right: 22vh;
+		overflow: auto;}
+
+#treq{
+		font-size:10px;
+		margin-top: 1px;
+		padding-left: vh;
+		padding-right: vh;
+		overflow: auto;}
+
+iframe{ 
+		margin-top: 5px;
+		border-color:#FFF65F;
+		font-style: inherit;
+		font-family: lucida console;
+		font-size: 50px;
+		left: 300px;
+		top: 1000px;	
+		width: 100%;}
+
+#dosc { position: all;
+		display: flex;
+		text-decoration: none;
+		font-style: inherit;
+		font-family: lucida console;
+		font-size: 25px;
+		left: 300px;
+		border: 0px;
+		height: 60px;}
+
+p{		margin: 0.5em;
+		align-content: center;}
+
+.slider {
+
+	width: 45%;
+	margin: auto;
+	overflow: hidden;}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 50s infinite alternate linear;}
+
+.slider li {
+	width: 100%;
+	list-style: none;}
+
+.slider img {
+	width: 100%;}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}}
+
+	.papa{
+		margin-top: 0px;
+	}

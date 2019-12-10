@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="jotaese.js"></script>
+<head>
+  <font id="txx" color="black"></font></a>
+</head>
+
+<body>
+
+<style>
+  
+body            {
+
+
+                font-family: Verdana, sans-serif;
+                margin: 0;
+                }
+
+*               {
+                box-sizing: border-box;
+                }
+
+.row > .column  {
+                padding: 0 8px;up
+                }
+
+
+.row:after      {
+                margin-top: 20px;
+                content: "";
+                display: table;
+                clear: both;
+                float: center;
+                }
+
+.column         {
+                margin-left: 25px;
+                margin-top: 20px;
+                float: left;
+                width: 50px;
+                padding-right: ;
+                }
+
+.row > .column2 {
+                padding: 0 8px;
+                }
+
+.column2        {
+                margin-top: 18px;
+                float: left;
+                width: 25%;
+                }
+/* fondo de pantalla */
+.modal          {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 2px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: white;
+                }
+/* contenido de fondo de pantalla */
+.modal-content  {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                width: 90%;
+                max-width: 1200px;
+                }
+/* boton de cierre de fotos*/
+.close          {
+                padding-left: ;
+                color: black;
+                position: absolute;
+                top: 0px;
+                right: 190px;
+                font-size: 35px;
+                font-weight: bold;
+                }
+
+.close:hover,
+.close:focus    {
+                color: #FFF65F;
+                text-decoration: none;
+                cursor: pointer;
+                }
+
+.mySlides       {
+                display: none;
+                }
+
+.cursor         {
+                cursor: pointer;
+                }
+/* botones adelante y atras */
+.prev,
+.next           {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: black;
+                font-weight: bold;
+                font-size: 20px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+                }
+/* posicion de botones adelante - atras */
+.next           {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+                }
+
+/* fondo de fotos */
+.prev:hover,
+.next:hover     {
+                background-color: #FFF65F;
+                }
+
+/* teto de las fotos */
+.numbertext     {
+                color: black;
+                font-size: 30px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+                }
+
+img             {
+                margin-bottom: -4px;
+                }
+
+.caption-container    {
+                      text-align: center;
+                      background-color: white;
+                      padding: 2px 16px;
+                      color: white;
+                      }
+
+.demo                 {
+                      opacity: 0.9;
+                      }
+
+.active,
+.demo:hover           {
+                      opacity: 1;
+                      }
+
+img.hover-shadow      {
+                      transition: 0.3s;
+                      }
+
+.hover-shadow:hover   {
+  
+                      box-shadow: 0 5px 8px 0 #67C9FF
+                      ;
+                      }
+
+@media screen and (max-width: 1024px){
+    
+
+div#sc{
+  width: 50%;
+  position: center;
+  padding: ;
+  padding-left: 125px ;
+  margin-top: 50px;
+
+}
+
+}
+
+#sc{
+  width: 50%;
+  padding: ;
+  padding-left: 321px;
+  margin-top: 50px;
+
+
+}
+</style>
+
+<div id="sc" >
+  
+  <div class="column">
+      <img src="s.png" style="width:90%" onclick="window.open('https://www.soundcloud.com/jo_ni')" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+      <img src="am.png" style="width:90%" onclick="window.open('https://audiomack.com/artist/jo_ni')" class="hover-shadow cursor">
+  </div>
+
+</div>
+
+<script>
+function opensrx(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+/*
+  <div class="column">
+      <img src="r.png" style="width:90%" onclick="window.open('https://www.reverbnation.com/joni46?profile_view_source=header_icon_nav')" class="hover-shadow cursor">
+  </div>
+  
+  <div class="column">
+      <img src="b.png" style="width:90%" onclick="window.open('https://www.beatstars.com/joni95/feed')" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+      <img src="sc.png" style="width:90%" onclick="window.open('https://www.soundclick.com/artist/default.cfm?bandid=1453600')" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+      <img src="o.png" style="width:90%" onclick="window.open('https://www.orfium.com/profile/joni43')" class="hover-shadow cursor">
+  </div>
+
+*/
+
+</script>
+
+</body>
+
+</html>

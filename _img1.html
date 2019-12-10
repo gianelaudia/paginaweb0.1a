@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* INICIO DE MEDIA*/
+
+@media all and (max-width: 1024px){
+
+.row > .column  {
+                padding: 0 8px;up
+                }
+
+
+.row:after      {
+                content: "";
+                display: table;
+                clear: both;
+                float: left;
+                }
+
+.column         {
+                margin-top: 0.5px;
+                float: left;
+                width: 25%;
+                }
+
+.row > .column2 {
+                padding: 0 8px;
+                }
+
+.column2        {
+                margin-top: 18px;
+                float: left;
+                width: 25%;
+                }
+/* fondo de pantalla */
+.modal          {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 2px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: white;
+                }
+/* contenido de fondo de pantalla */
+.modal-content  {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                width: 90%;
+                max-width: 1200px;
+                }
+/* boton de cierre de fotos*/
+.close          {
+                padding-left: ;
+                color: black;
+                position: absolute;
+                top: 0px;
+                right: 190px;
+                font-size: 35px;
+                font-weight: bold;
+                }
+
+.close:hover,
+.close:focus    {
+                color: #FFF65F;
+                text-decoration: none;
+                cursor: pointer;
+                }
+
+.mySlides       {
+                display: none;
+                }
+
+.mySlides1       {
+                display: none;
+                }
+
+.cursor         {
+                cursor: pointer;
+                }
+/* botones adelante y atras */
+.prev,
+.next           {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: black;
+                font-weight: bold;
+                font-size: 20px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+                }
+/* posicion de botones adelante - atras */
+.next           {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+                }
+
+/* fondo de fotos */
+.prev:hover,
+.next:hover     {
+                background-color: #FFF65F;
+                }
+
+/* teto de las fotos */
+.numbertext     {
+                color: black;
+                font-size: 30px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+                }
+
+img             {
+                margin-bottom: -4px;
+                }
+
+.caption-container    {
+                      text-align: center;
+                      background-color: white;
+                      padding: 2px 16px;
+                      color: white;
+                      }
+
+.demo                 {
+                      opacity: 0.9;
+                      }
+
+.active,
+.demo:hover           {
+                      opacity: 1;
+                      }
+
+img.hover-shadow      {
+                      transition: 0.3s;
+                      }
+
+.hover-shadow:hover   {
+  
+                      box-shadow: 0 10px 8px 0 #67C9FF
+                      ;
+                      }
+}
+
+/* FIN DE MEDIA*/
+
+body            {
+
+
+                font-family: Verdana, sans-serif;
+                margin: 0;
+                }
+
+*               {
+                box-sizing: border-box;
+                }
+
+.row > .column  {
+                padding: 0 8px;up
+                }
+
+
+.row:after      {
+                content: "";
+                display: table;
+                clear: both;
+                float: left;
+                }
+
+.column         {
+                margin-top: 0.5px;
+                float: left;
+                width: 25%;
+                }
+
+.row > .column2 {
+                padding: 0 8px;
+                }
+
+.column2        {
+                margin-top: 18px;
+                float: left;
+                width: 25%;
+                }
+/* fondo de pantalla */
+.modal          {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 2px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: white;
+                }
+/* contenido de fondo de pantalla */
+.modal-content  {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                width: 90%;
+                max-width: 1200px;
+                }
+
+.modal1          {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 2px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: white;
+                }
+/* contenido de fondo de pantalla */
+.modal1-content1  {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                width: 90%;
+                max-width: 1200px;
+                }
+/* boton de cierre de fotos*/
+.close          {
+                padding-left: ;
+                color: black;
+                position: absolute;
+                top: 0px;
+                right: 190px;
+                font-size: 35px;
+                font-weight: bold;
+                }
+
+.close:hover,
+.close:focus    {
+                color: #FFF65F;
+                text-decoration: none;
+                cursor: pointer;
+                }
+
+.mySlides       {
+                display: none;
+                }
+
+.mySlides1       {
+                display: none;
+                }
+
+.cursor         {
+                cursor: pointer;
+                }
+/* botones adelante y atras */
+.prev,
+.next           {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: black;
+                font-weight: bold;
+                font-size: 20px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+                }
+/* posicion de botones adelante - atras */
+.next           {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+                }
+
+/* fondo de fotos */
+.prev:hover,
+.next:hover     {
+                background-color: #FFF65F;
+                }
+
+/* teto de las fotos */
+.numbertext     {
+                color: black;
+                font-size: 30px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+                }
+
+img             {
+                margin-bottom: -4px;
+                }
+
+.caption-container    {
+                      text-align: center;
+                      background-color: white;
+                      padding: 2px 16px;
+                      color: white;
+                      }
+
+.demo                 {
+                      opacity: 0.9;
+                      }
+
+.active,
+.demo:hover           {
+                      opacity: 1;
+                      }
+
+img.hover-shadow      {
+                      transition: 0.3s;
+                      }
+
+.hover-shadow:hover   {
+  
+                      box-shadow: 0 10px 8px 0 #67C9FF
+                      ;
+                      }
+</style>
+
+<body>
+
+  <h2 style="text-align:center;
+            font-family: lucida console; "></h2>
+
+<div class="row">
+
+  <div class="column">
+    <img src="https://cdnb.artstation.com/p/assets/images/images/014/233/825/large/jonathan-matos-34.jpg?1543106584" style="width:100%" onclick="openModala()" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="https://cdna.artstation.com/p/assets/images/images/014/645/820/large/jonathan-matos-heuart.jpg?1544820383" style="width:100%" onclick="openModalb()" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="https://cdnb.artstation.com/p/assets/images/images/015/103/921/large/jonathan-matos-image.jpg?1547065349" style="width:100%" onclick="openModalc()" class="hover-shadow cursor">
+  </div>
+  
+</div>
+
+<div id="myModala" class="modal">
+  
+  <div class="modal-content">
+  <span class="close cursor" onclick="closeModala()">&times;</span>
+   <div class="mySlidesa">
+      <div class="numbertext"></div>
+      <center><img src="https://cdnb.artstation.com/p/assets/images/images/014/233/825/large/jonathan-matos-34.jpg?1543106584" style="width:70%"></center>
+    </div>
+
+    <div class="mySlidesa">
+      <div class="numbertext"></div>
+      <center><img src="https://cdnb.artstation.com/p/assets/images/images/014/233/829/large/jonathan-matos-n.jpg?1543106642" style="width:70%"> </center>
+    </div>
+
+    <div class="mySlidesa">
+      <div class="numbertext"></div>
+       <center><img src="https://cdnb.artstation.com/p/assets/images/images/015/149/977/large/jonathan-matos-35.jpg?1547234757" style="width:70%"> </center>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    
+  </div>
+</div>
+
+<div id="myModalb" class="modal">
+  
+  <div class="modal-content">
+  <span class="close cursor" onclick="closeModalb()">&times;</span>
+   <div class="mySlidesb">
+      <div class="numbertext"></div>
+      <center><img src="https://cdna.artstation.com/p/assets/images/images/014/645/820/large/jonathan-matos-heuart.jpg?1544820383" style="width:70%"></center>
+    </div>
+
+    <div class="mySlidesb">
+      <div class="numbertext"></div>
+      <center><img src="https://cdnb.artstation.com/p/assets/images/images/014/233/829/large/jonathan-matos-n.jpg?1543106642" style="width:70%"> </center>
+      
+    </div>
+
+    <div class="mySlidesb">
+      <div class="numbertext"></div>
+       <center><img src="https://cdnb.artstation.com/p/assets/images/images/015/149/977/large/jonathan-matos-35.jpg?1547234757" style="width:70%"> </center>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    
+  </div>
+</div>
+
+<div id="myModalc" class="modal">
+  
+  <div class="modal-content">
+  <span class="close cursor" onclick="closeModalc()">&times;</span>
+   <div class="mySlidesc">
+      <div class="numbertext"></div>
+      <center><img src="https://cdna.artstation.com/p/assets/images/images/014/645/820/large/jonathan-matos-heuart.jpg?1544820383" style="width:70%"></center>
+    </div>
+
+    <div class="mySlidesc">
+      <div class="numbertext"></div>
+      <center><img src="https://cdnb.artstation.com/p/assets/images/images/014/233/829/large/jonathan-matos-n.jpg?1543106642" style="width:70%"> </center>
+      
+    </div>
+
+    <div class="mySlidesc">
+      <div class="numbertext"></div>
+       <center><img src="https://cdnb.artstation.com/p/assets/images/images/015/149/977/large/jonathan-matos-35.jpg?1547234757" style="width:70%"> </center>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+
+//////***********************************************///////
+//////***********************************************///////
+//ESTE ES EL PRIMER MODAL/////
+//////***********************************************///////
+//////***********************************************///////
+
+function openModala() {
+  document.getElementById("myModala").style.display = "block";
+}
+function closeModala() {
+  document.getElementById("myModala").style.display = "none";
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slidesa = document.getElementsByClassName("mySlidesa");
+  var dotsa = document.getElementsByClassName("demo");
+  var captionTexta = document.getElementById("caption");
+
+  if (n > slidesa.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slidesa.length; i++) {
+      slidesa[i].style.display = "none";
+  }
+  for (i = 0; i < dotsa.length; i++) {
+      dotsa[i].className = dotsa[i].className.replace(" active", "");
+  }
+  slidesa[slideIndex-1].style.display = "block";
+  dotsa[slideIndex-1].className += " active";
+  captionTexta.innerHTML = dotsa[slideIndex-1].alt;
+}
+
+//////***********************************************///////
+//////***********************************************///////
+//ESTE ES EL SEGUNDO MODAL/////
+//////***********************************************///////
+//////***********************************************///////
+
+function openModalb() {
+  document.getElementById("myModalb").style.display = "block";
+}
+function closeModalb() {
+  document.getElementById("myModalb").style.display = "none";
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(m) {
+  showSlides(slideIndex += m);
+}
+
+function currentSlide(m) {
+  showSlides(slideIndex = m);
+}
+
+function showSlides(m) {
+  var j;
+  var slidesb = document.getElementsByClassName("mySlidesb");
+  var dotsb = document.getElementsByClassName("demo");
+  var captionTextb = document.getElementById("caption");
+
+  if (m > slidesb.length) {slideIndex = 1}
+  if (m < 1) {slideIndex = slidesb.length}
+  for (j = 0; j < slidesb.length; j++) {
+      slidesb[j].style.display = "none";
+  }
+  for (j = 0; j < dotsb.length; j++) {
+      dotsb[j].className = dotsb[j].className.replace(" active", "");
+  }
+  slidesb[slideIndex-1].style.display = "block";
+  dotsb[slideIndex-1].className += " active";
+  captionTextb.innerHTML = dotsb[slideIndex-1].alt;
+}
+
+//////***********************************************///////
+//////***********************************************///////
+//ESTE ES EL TERCER MODAL/////
+//////***********************************************///////
+//////***********************************************///////
+
+function openModalc() {
+  document.getElementById("myModalc").style.display = "block";
+}
+function closeModalc() {
+  document.getElementById("myModalc").style.display = "none";
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(r) {
+  showSlides(slideIndex += r);
+}
+
+function currentSlide(r) {
+  showSlides(slideIndex = r);
+}
+
+function showSlides(r) {
+  var r;
+  var slidesc = document.getElementsByClassName("mySlidesc");
+  var dotsc = document.getElementsByClassName("demo");
+  var captionTextc = document.getElementById("caption");
+
+  if (r > slidesc.length) {slideIndex = 1}
+  if (r < 1) {slideIndex = slidesc.length}
+  for (k = 0; k < slidesc.length; k++) {
+      slidesc[k].style.display = "none";
+  }
+  for (k = 0; k < dotsc.length; k++) {
+      dotsc[k].className = dotsc[k].className.replace(" active", "");
+  }
+  slidesc[slideIndex-1].style.display = "block";
+  dotsc[slideIndex-1].className += "active";
+  captionTextc.innerHTML = dotsc[slideIndex-1].alt;
+}
+
+</script>
+    
+</body>
+</html>

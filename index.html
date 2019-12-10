@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Joni</title>
+
+	<meta  http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+	<link  rel="icon" type="image/png" href="_fav1.png" />
+	<link  rel="stylesheet" type="text/css" href="_css.css" media="screen" />
+	<script type="text/javascript" src="_jav.js">
+	</script>
+	<script type="text/javascript" src="_.js">
+	</script>
+
+</head>
+
+<body>
+
+<style>
+
+@media screen and (max-width: 1024px){
+		
+	#tres{ 	position: relative; ;
+		float: right;
+		margin-top: 10px;
+		text-shadow: 0px 10px 5px #67C9FF;
+		padding-left: 0vh;
+		padding-right: 0vh;
+		overflow: auto;
+		float: left;
+		display: flex;}
+
+ div#dosx
+{width: 20%;
+margin-left: 50px;}
+
+ /* div#dosx
+{width: 100%; float:left;}
+
+div#dosx
+{width: 100%;
+position: center;}
+
+div#dosc
+{width: 100%; float:left;}
+
+div#dosc
+{width: 100%; float: left;}
+
+div#papa{
+{margin-top: 100px;}
+}
+*/
+}
+
+body {
+	background: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+#myOBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	background-color: #AFAFAF;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+#myOBtn:hover {
+	background-color: #787878;
+}
+
+.dropbtn {
+	background-color: #282828;
+	color: #67C9FF;
+	padding: 16px;
+	font-size: 15px;
+	border: none;
+	font-style: inherit;
+	font-family: lucida console;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #282828;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #565656;}
+
+.dropdown:hover .dropdown-content {display: block;
+font-size: 15px;}
+
+.dropdown:hover .dropbtn {background-color: #282828;}
+
+</style>
+
+<button onclick="topFunction()" id="myOBtn" title="Ir al men&uacute">Inicio
+</button>
+
+<div id="papa">
+	
+
+
+<div class="menu" id="dosc">
+
+						<style>A {text-decoration: none;}
+						</style>             
+	<div id="dosx">
+	
+		<a href="_.html" target="formularios">
+						<font color="white" id="tres">
+							Joni 
+						</font>
+		</a>
+		
+	</div>
+	  
+	<div class="dropdown">
+			<button class="dropbtn">draws</button>
+				<div class="dropdown-content">
+						
+						<a href="https://gianelaudia.artstation.com/" target="formularios">
+						<font color="#67C9FF">arstation</font></a>
+
+						<a  href="_img.html" target="formularios">
+						<font color="#67C9FF">instagram</font></a>
+
+				</div>
+	</div>
+
+	<div class="dropdown">
+			<button class="dropbtn">beats</button>
+				<div class="dropdown-content">
+						<a  href="ad1.html" target="formularios">
+						<font color="#67C9FF">soundcloud</font></a>
+				</div>
+	</div>
+
+	<div class="dropdown">
+			<button class="dropbtn">pics</button>
+				<div class="dropdown-content">
+						<a  href="_.html" target="formularios">
+						<font color="#67C9FF">personal</font></a>
+
+						<a  href="_.html" target="formularios">
+						<font color="#67C9FF">minecraft</font></a>
+
+						<a href="_.html" target="formularios">
+						<font color="#67C9FF">world of warcraft</font></a>					
+				</div>
+	</div>
+
+	<div class="dropdown">
+			<button class="dropbtn">me</button>
+				<div class="dropdown-content">
+						<a  href="links.html" target="formularios">
+						<font color="#67C9FF">art</font></a>
+						<a  href="links2.html" target="formularios">
+						<font color="#67C9FF">music</font></a>
+				</div>
+
+	</div>
+
+	
+		
+</div>
+
+</div>
+
+	<div class="principal">
+
+				<iframe allowtransparency="true" style="background: #000000;" src="_.html" frameborder="0" name="formularios" height="500"></iframe>
+	</div>
+
+<script>
+
+		//boton
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById("myOBtn").style.display = "block";
+		} else {
+		document.getElementById("myOBtn").style.display = "none";
+		}
+		}
+
+		//boton de funcion - 
+		function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		}
+
+		
+		/*function top1(){
+			document.getElementById("formularios");
+			alert("formularios");
+		}
+
+</script>
+
+</body>
+
+</html>

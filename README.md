@@ -48,3 +48,8 @@ Próximo cambio en los archivos de ejecución y eventos a Python, y posteriormen
 
 #DJANGO:
 Próximo uso del framework DJANGO, para un mejor rendimiento y tiempo de respuesta, se implementará luego de cambiar por completo la parte lógica de la veb a Python, mediante una serie de cambios que se irán publicando, así como errores de compilación y codificación.
+
+#ACTUALIZACION:
+Hasta ahora ninguno.
+
+#
